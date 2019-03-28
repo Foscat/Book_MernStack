@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import API from "../utils/API";
 import { Col, Row, Container } from "../components/Grid";
 import { List } from "../components/List";
+import "./style.css";
 
 class Home extends Component {
   state = {
@@ -64,15 +65,17 @@ class Home extends Component {
         <Row>
           <Col size="md-12">
             <Jumbotron>
-              <h1 className="text-center">
-                <strong>(React) Google Books Search</strong>
+              <h1 style={{color:"#0e2c53", fontSize:"400%"}} className="text-center fancyFont">
+                <strong>Google Books Search</strong>
+                <h5 style={{borderBottom:"solid 1px black", width:"fit-content", margin:"auto"}}>A Product of K-Fizzle Enterprises</h5>
               </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+              <h2 className="text-center fancyFont">Search for and Save Books of Interest.</h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
             <Card title="Book Search" icon="far fa-book">
               <Form
+                style={{backgroundColor:"#f6f5f8", border:"solid black 1px", padding:"5%"}}
                 handleInputChange={this.handleInputChange}
                 handleFormSubmit={this.handleFormSubmit}
                 q={this.state.q}

@@ -1,10 +1,10 @@
 import React from "react";
 
-function Form({ q, handleInputChange, handleFormSubmit }) {
+function Form({ style, q, handleInputChange, handleFormSubmit }) {
   return (
-    <form>
+    <form style={style} className="rounded">
       <div className="form-group">
-        <label htmlFor="Query">
+        <label className="fancyFont" style={{fontSize:"150%"}} htmlFor="Query">
           <strong>Book</strong>
         </label>
         <input

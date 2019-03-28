@@ -8,7 +8,7 @@ function Book({ title, subtitle, authors, link, description, image, Button }) {
     <ListItem>
       <Row className="flex-wrap-reverse">
         <Col size="md-8">
-          <h3 className="font-italic">{title}</h3>
+          <h3 style={{fontWeight:"bolder", color:"#0e2c53"}} className="fancyFont">{title}</h3>
           {subtitle && <h5 className="font-italic">{subtitle}</h5>}
         </Col>
         <Col size="md-4">
@@ -22,7 +22,7 @@ function Book({ title, subtitle, authors, link, description, image, Button }) {
       </Row>
       <Row>
         <Col size="md-6">
-          <p className="font-italic small">Written by {authors}</p>
+          <p style={{borderBottom:"solid black 1px", width:"fit-content"}} className="font-italic small">Written by {authors}</p>
         </Col>
       </Row>
       <Row>
@@ -30,7 +30,7 @@ function Book({ title, subtitle, authors, link, description, image, Button }) {
           <img className="img-thumbnail img-fluid w-100" src={image} alt={title} />
         </Col>
         <Col size="12 sm-8 md-10">
-          <p>{description}</p>
+          <p className="mostFont" style={{lineHeight:"125%", fontSize:"150%"}}>{description}</p>
         </Col>
       </Row>
     </ListItem>
