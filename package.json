@@ -1,0 +1,20 @@
+{
+  "name": "book_mernstack",
+  "version": "1.0.0",
+  "description": "Greatest book search app ever",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Foscat/Book_MernStack.git"
+  },
+  "author": "k-fizzle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Foscat/Book_MernStack/issues"
+  },
+  "homepage": "https://github.com/Foscat/Book_MernStack#readme"
+}
